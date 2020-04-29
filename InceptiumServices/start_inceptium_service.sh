@@ -22,10 +22,10 @@ do
                 RESTARTCOUNT=0
 		#shutdown -hP now
         fi
-        if [ $RESTARTCOUNT -ge 30 ];
+        if [ $RESTARTCOUNT -ge 50 ];
         then
                 INCEPTIUM_ACTIVE=0
-                echo "InceptiumSrv e' stato bloccato in seguito a 30 tentativi automatici di riavvio." >> $LOGFILE
+                echo "InceptiumSrv e' stato bloccato in seguito a 50 tentativi automatici di riavvio." >> $LOGFILE
 		echo "Send Mail service Stop!!!"
 		#ssmtp cpmatrix@mac.com < mail-stop.txt
 		reboot
