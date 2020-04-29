@@ -9,7 +9,7 @@ RESTARTCOUNT=0
 while [ $INCEPTIUM_ACTIVE -eq 1 ];
 do
 
-	java -Xms128m -Xmx256m -cp "InceptiumServices.jar:/root/InceptiumLinuxAppliance/InceptiumServices/lib/*" inceptiumserver.core.server.IncServer noswing updatedatabase landevice=eth0 datastorage=$DATASTORAGE appstore=$APPSTORE >> $LOGFILE 2>&1
+	java -Xms128m -Xmx256m -cp "InceptiumServices.jar:/root/InceptiumLinuxAppliance/InceptiumServices/lib/*:/root/IncStorage/InceptiumAppStore/*" inceptiumserver.core.server.IncServer noswing updatedatabase landevice=eth0 datastorage=$DATASTORAGE appstore=$APPSTORE >> $LOGFILE 2>&1
         MSG=$?
         echo "Messaggio ricevuto: $MSG" >>  $LOGFILE
         echo "MSG: $MSG" >> $LOGFILE
