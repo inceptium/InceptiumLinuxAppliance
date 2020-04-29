@@ -1,13 +1,13 @@
 #!/bin/bash
-cd /root/inceptium/InceptiumServices/
+cd /root/InceptiumLinuxAppliance/InceptiumServices/
 INCEPTIUM_ACTIVE=1
-LOGFILE=/root/inceptium/log/inceptium_srv.log
+LOGFILE=/root/InceptiumLinuxAppliance/log/inceptium_srv.log
 MSG=0
 RESTARTCOUNT=0
 while [ $INCEPTIUM_ACTIVE -eq 1 ];
 do
 
-	java -Xms128m -Xmx256m -cp "InceptiumServices.jar:/root/inceptium/InceptiumServices/lib/*:/root/inceptium/InceptiumServices/InceptiumApp/*" inceptiumserver.core.server.IncServer noswing updatedatabase landevice=eth0 >> $LOGFILE 2>&1
+	java -Xms128m -Xmx256m -cp "InceptiumServices.jar:/root/InceptiumLinuxAppliance/InceptiumServices/lib/*:/root/InceptiumLinuxAppliance/InceptiumServices/InceptiumApp/*" inceptiumserver.core.server.IncServer noswing updatedatabase landevice=eth0 >> $LOGFILE 2>&1
         MSG=$?
         echo "Messaggio ricevuto: $MSG" >>  $LOGFILE
         echo "MSG: $MSG" >> $LOGFILE
