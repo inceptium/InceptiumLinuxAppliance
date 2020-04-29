@@ -3,12 +3,13 @@ cd /root/InceptiumLinuxAppliance/InceptiumServices/
 INCEPTIUM_ACTIVE=1
 LOGFILE=/root/IncStorage/log/inceptium_srv.log
 DATASTORAGE=/root/IncStorage
+APPSTORE=/root/IncStorage/InceptiumAppStore
 MSG=0
 RESTARTCOUNT=0
 while [ $INCEPTIUM_ACTIVE -eq 1 ];
 do
 
-	java -Xms128m -Xmx256m -cp "InceptiumServices.jar:/root/InceptiumLinuxAppliance/InceptiumServices/lib/*" inceptiumserver.core.server.IncServer noswing updatedatabase landevice=eth0 datastorage=$DATASTORAGE appstore=$DATASTORAGE/InceptiumAppStore >> $LOGFILE 2>&1
+	java -Xms128m -Xmx256m -cp "InceptiumServices.jar:/root/InceptiumLinuxAppliance/InceptiumServices/lib/*" inceptiumserver.core.server.IncServer noswing updatedatabase landevice=eth0 datastorage=$DATASTORAGE appstore=$APPSTORE >> $LOGFILE 2>&1
         MSG=$?
         echo "Messaggio ricevuto: $MSG" >>  $LOGFILE
         echo "MSG: $MSG" >> $LOGFILE
