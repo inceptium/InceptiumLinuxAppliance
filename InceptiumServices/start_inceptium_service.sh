@@ -6,6 +6,7 @@ DATASTORAGE=/root/IncStorage
 APPSTORE=/root/IncStorage/InceptiumAppStore
 MSG=0
 RESTARTCOUNT=0
+rm $LOGFILE
 while [ $INCEPTIUM_ACTIVE -eq 1 ];
 do
     #java -Xms128m -Xmx256m  -XX:+UseLinuxPosixThreadCPUClocks -agentpath:/root/profiling/lib/deployed/jdk16/linux-amd64/libprofilerinterface.so=/root/profiling/lib,5140  -cp "InceptiumServices.jar:/root/InceptiumLinuxAppliance/InceptiumServices/lib/*:/root/IncStorage/InceptiumAppStore/*" inceptiumserver.core.server.IncServer noswing updatedatabase
