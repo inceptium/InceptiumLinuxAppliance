@@ -1,27 +1,20 @@
 #!/bin/bash
 
 path="/root/IncStorage/InceptiumAppStore"
-declare -a NOMEAPP #ogni elemento è nome.jar senza il percorso
-declare -a NEWNOMEAPP #ogni elemento è nome.jar senza il percorso
-declare -a HASHAPP #ogni elemento contiene l'hash del file senza il nome
-declare -a NEWHASHAPP #ogni elemento contiene l'hash del file senza il nome
 
-declare -A NOMEAPPHASHAPP #nomeapp -> hashapp
-declare -A NEWNOMEAPPNEWHASHAPP #nomeapp -> hashapp
+declare -A OLD_HASH #nomeapp -> hashapp
+declare -A NEW_HASH #nomeapp -> hashapp
 
 function init() {
     NUMELEM=`ls -lR $path/*.jar | wc -l`
-
+    echo $NUMELEM
     for file in $path/*.jar
     do
-    : '
-	NOMEAPP=("${NOMEAPP[@]}" "{file##*/}")
-	tmp=$(sha512sum $file)
-	HASHAPP=("${HASHAPP[@]}" "${tmp%% *}")
-    '
-    tmp=$(sha512sum $file)
-    NOMEAPPHASHAPP["{file##*/}"]="${tmp%% *}"
+        codice=$(sha512sum $file)
+	OLD_HASH[$file]=$codice
     done
+    #echo ${OLD_HASH[@]}
+
 }
 
 
@@ -45,32 +38,18 @@ while true; do
     else
     	for file in $path/*.jar
    	do
-	: '
-           NEWNOMEAPP=`ls $path/*.jar` #a che serve??
-	   tmp=$(sha512sum $file)
-           NEWHASHAPP=("${NEWHASHAPP[@]}" "${tmp%% *}")
-	 '
-	 tmp=$(sha512sum $file)
-	 NEWNOMEAPPNEWHASHAPP["{file##*/}"]="${tmp%% *}"
-	 
+           codice=$(sha512sum $file)
+           NEW_HASH[$file]=$codice
     	done
-	
-	: '
-        for k in NUMELEM
+
+        for k in  $path/*.jar
         do
-            if [${HASHAPP[k]} != ${NEWHASHAPP[k]}] 
-            then
-                restart
-            fi
+		if [[ ${NEW_HASH[$k]} != ${OLD_HASH[$k]} ]] 
+        	then
+		    echo "file $k modificato"
+		    restart
+            	fi
         done
-	'
-	for i in "${!NOMEAPPHASHAPP[@]}";
-	do
-	    if [ ${NOMEAPPHASHAPP[$i]} != ${NEWNOMEAPPNEWHASHAPP[$i]} ]
-        then
-	        restart
-	    fi
-	done
     fi
 done
 
