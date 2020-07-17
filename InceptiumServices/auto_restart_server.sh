@@ -40,7 +40,7 @@ while true; do
     sleep 5
 	NEWNUMELEM=`ls -lR $path/*.jar | wc -l`
 
-    if ["$NUMELEM" -ne "$NEWNUMELEM"]
+    if [ $NUMELEM -ne $NEWNUMELEM ]
     then
         restart
     else
