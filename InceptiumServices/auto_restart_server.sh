@@ -26,9 +26,8 @@ function init() {
 
 
 function restart() {
-    kill -9 `pgrep -f java`
+    kill -9 `pgrep -f InceptiumServices.jar`
     init
-    tail -f -n100 /root/IncStorage/log/inceptium_srv.log
 }
 
 
