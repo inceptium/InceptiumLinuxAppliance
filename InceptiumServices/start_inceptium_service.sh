@@ -18,7 +18,7 @@ do
         echo "RESTARTCOUNT: $RESTARTCOUNT" >> $LOGFILE
         sleep 15
         echo "SLEPT" >> $LOGFILE
-        if [ $MSG -eq 100 ];
+        if [ $MSG -eq 1000 ];
         then
                 INCEPTIUM_ACTIVE=1
                 echo "[$MSG] InceptiumServices stopped!!!" >> $LOGFILE
