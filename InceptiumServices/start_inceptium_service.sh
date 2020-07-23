@@ -18,14 +18,14 @@ do
         echo "RESTARTCOUNT: $RESTARTCOUNT" >> $LOGFILE
         sleep 15
         echo "SLEPT" >> $LOGFILE
-        if [ $MSG -eq 1000 ];
+        if [ $MSG -eq 100 ];
         then
                 INCEPTIUM_ACTIVE=1
                 echo "[$MSG] InceptiumServices stopped!!!" >> $LOGFILE
                 RESTARTCOUNT=0
 		#shutdown -hP now
         fi
-        if [ $RESTARTCOUNT -ge 50 ];
+        if [ $RESTARTCOUNT -ge 1000 ];
         then
                 INCEPTIUM_ACTIVE=0
                 echo "InceptiumSrv e' stato bloccato in seguito a 50 tentativi automatici di riavvio." >> $LOGFILE
