@@ -1,6 +1,6 @@
 self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
-    "revision": "e53d1739f65bcdd366235c0628e693f6",
+    "revision": "2fb9f1da816dda04d319c0878958bd6c",
     "url": "/portaledef/index.html"
   },
   {
@@ -8,7 +8,7 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
     "url": "/portaledef/static/css/2.7c5c5277.chunk.css"
   },
   {
-    "revision": "51748813aa6e67c1c653",
+    "revision": "ebb41968f06cc2bf9630",
     "url": "/portaledef/static/css/main.b7c40936.chunk.css"
   },
   {
@@ -20,8 +20,8 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
     "url": "/portaledef/static/js/2.950bb93f.chunk.js.LICENSE.txt"
   },
   {
-    "revision": "51748813aa6e67c1c653",
-    "url": "/portaledef/static/js/main.33ba29c9.chunk.js"
+    "revision": "ebb41968f06cc2bf9630",
+    "url": "/portaledef/static/js/main.fe0dd8bc.chunk.js"
   },
   {
     "revision": "61ffe436f95d28546375",
