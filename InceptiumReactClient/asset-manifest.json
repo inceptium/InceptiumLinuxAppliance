@@ -1,12 +1,12 @@
 {
   "files": {
     "main.css": "/portaledef/static/css/main.b7c40936.chunk.css",
-    "main.js": "/portaledef/static/js/main.508e3f44.chunk.js",
+    "main.js": "/portaledef/static/js/main.7ebfa5b1.chunk.js",
     "runtime-main.js": "/portaledef/static/js/runtime-main.f56531f5.js",
     "static/css/2.7c5c5277.chunk.css": "/portaledef/static/css/2.7c5c5277.chunk.css",
     "static/js/2.fbeed489.chunk.js": "/portaledef/static/js/2.fbeed489.chunk.js",
     "index.html": "/portaledef/index.html",
-    "precache-manifest.9bfe712074a33dffefc31065959271b0.js": "/portaledef/precache-manifest.9bfe712074a33dffefc31065959271b0.js",
+    "precache-manifest.15e8ac3a6fb50bce39b935a5f313ac6c.js": "/portaledef/precache-manifest.15e8ac3a6fb50bce39b935a5f313ac6c.js",
     "service-worker.js": "/portaledef/service-worker.js",
     "static/js/2.fbeed489.chunk.js.LICENSE.txt": "/portaledef/static/js/2.fbeed489.chunk.js.LICENSE.txt",
     "static/media/app_icon.png": "/portaledef/static/media/app_icon.8e9a9dd1.png",
@@ -18,6 +18,6 @@
     "static/css/2.7c5c5277.chunk.css",
     "static/js/2.fbeed489.chunk.js",
     "static/css/main.b7c40936.chunk.css",
-    "static/js/main.508e3f44.chunk.js"
+    "static/js/main.7ebfa5b1.chunk.js"
   ]
 }
