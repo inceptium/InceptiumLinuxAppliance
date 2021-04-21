@@ -11,6 +11,7 @@ var dataForm = function () {
     this.userwhosentinvitation = "";
     this.inceptiumid = "";
     this.id_registerpoint = "";
+    this.inchost="";
 
 
 }

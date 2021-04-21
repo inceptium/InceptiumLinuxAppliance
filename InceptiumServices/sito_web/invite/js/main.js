@@ -12,7 +12,8 @@ $(document).ready(function () {
     data.newusermail = getUrlParameter("newusermail");
     data.inceptiumid = getUrlParameter("inceptiumid");
     data.userwhosentinvitation = getUrlParameter("userwhosentinvitation");
-
+    data.id_registerpoint = getUrlParameter("id_registerpoint");
+    data.inchost = getUrlParameter("inchost");
     document.getElementById("email").value = data.newusermail;
 
 });
@@ -28,12 +29,13 @@ function submit() {
         data.password = document.getElementById("psw-repeat").value;
         //alert(btoa(data.email));
 
-        var url = "registernewuser?id_registerpoint=" +
+        var url = atob(data.inchost) + "/registernewuser?id_registerpoint=" +
                 data.id_registerpoint + "::userwhosentinvitation=" +
                 data.userwhosentinvitation + "::newusermail=" +
                 data.newusermail + "::inceptiumid=" + data.inceptiumid +
                 "::newuserpassword.b64=" + btoa(data.password) +
                 "::newuserdescription.b64=" + btoa(data.newuserdescription_b64);
+        //console.log(window.location.toString());
         window.location.href = url;
     } else {
         //alert(btoa(data.email));
@@ -41,6 +43,7 @@ function submit() {
     }
 
 }
+;
 
 function loadpage() {
     var pippo = 'mail ciao';
