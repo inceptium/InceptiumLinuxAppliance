@@ -4,12 +4,14 @@
  * and open the template in the editor.
  */
 
-
 var dataForm = function () {
-    this.email = "";
-    this.userDescription = "";
+    this.newusermail = "";
+    this.newuserdescription_b64 = "";
     this.password = "";
-    this.userwhoinvite="";
-    this.inceptiumid="";
+    this.userwhosentinvitation = "";
+    this.inceptiumid = "";
+    this.id_registerpoint = "";
 
-};
+
+}
+

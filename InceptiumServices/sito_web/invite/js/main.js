@@ -5,25 +5,41 @@
  */
 
 
+var data;
 
 $(document).ready(function () {
-    window.setTimeout(function () {
+    data = new dataForm();
+    data.newusermail = getUrlParameter("newusermail");
+    data.inceptiumid = getUrlParameter("inceptiumid");
+    data.userwhosentinvitation = getUrlParameter("userwhosentinvitation");
 
-        var data = new dataForm();
-        data.email = getUrlParameter("email");
-        data.inceptiumid = getUrlParameter("inceptiumid");
-        data.userwhoinvite = getUrlParameter("userwhoinvite");
+    document.getElementById("email").value = data.newusermail;
 
-        document.getElementById("email").value = data.email;
-    })
-})
+});
 
-function quandoclicco() {
-    var email = document.getElementById("email").value;
-    var nominativo = document.getElementById("nominativo").value;
+
+
+function submit() {
+    data.newusermail = document.getElementById("email").value;
+    data.newuserdescription_b64 = document.getElementById("nominativo").value;
     var password1 = document.getElementById("psw").value;
     var password2 = document.getElementById("psw-repeat").value;
-    alert(btoa(email));
+    if (password1 === password2) {
+        data.password = document.getElementById("psw-repeat").value;
+        //alert(btoa(data.email));
+
+        var url = "registernewuser?id_registerpoint=" +
+                data.id_registerpoint + "::userwhosentinvitation=" +
+                data.userwhosentinvitation + "::newusermail=" +
+                data.newusermail + "::inceptiumid=" + data.inceptiumid +
+                "::newuserpassword.b64=" + btoa(data.password) +
+                "::newuserdescription.b64=" + btoa(data.newuserdescription_b64);
+        window.location.href = url;
+    } else {
+        //alert(btoa(data.email));
+        alert("Attentione !!!\nLe password non coincidono!!!")
+    }
+
 }
 
 function loadpage() {
