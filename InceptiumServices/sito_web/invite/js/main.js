@@ -42,7 +42,7 @@ function submit() {
          url: urllink,
             type: 'GET',
             success: function (resul) {
-                console.log(resul);
+                console.log(resul.responseText);
             },
             error: function (error) {
                 console.log(error);
