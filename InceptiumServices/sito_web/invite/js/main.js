@@ -16,7 +16,7 @@ $(document).ready(function () {
     data.inchost = getUrlParameter("inchost");
     document.getElementById("email").value = data.newusermail;
 
-});
+})
 
 
 
@@ -29,21 +29,35 @@ function submit() {
         data.password = document.getElementById("psw-repeat").value;
         //alert(btoa(data.email));
 
-        var url = atob(data.inchost) + "/registernewuser?id_registerpoint=" +
+        var urllink = atob(data.inchost) + "/registernewuser?id_registerpoint=" +
                 data.id_registerpoint + "::userwhosentinvitation=" +
                 data.userwhosentinvitation + "::newusermail=" +
                 data.newusermail + "::inceptiumid=" + data.inceptiumid +
                 "::newuserpassword.b64=" + btoa(data.password) +
                 "::newuserdescription.b64=" + btoa(data.newuserdescription_b64);
+
         //console.log(window.location.toString());
-        window.location.href = url;
+        
+        $.ajax({
+         url: urllink,
+            type: 'GET',
+            success: function (resul) {
+                console.log(resul);
+            },
+            error: function (error) {
+                console.log(error);
+            }
+        })
+        
+       
+        //window.location.href = url;
     } else {
         //alert(btoa(data.email));
         alert("Attentione !!!\nLe password non coincidono!!!")
     }
 
 }
-;
+
 
 function loadpage() {
     var pippo = 'mail ciao';
@@ -65,4 +79,4 @@ var getUrlParameter = function getUrlParameter(sParam) {
         }
     }
     return false;
-};
+}
