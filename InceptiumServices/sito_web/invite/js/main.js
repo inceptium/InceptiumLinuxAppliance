@@ -14,7 +14,10 @@ $(document).ready(function () {
     data.userwhosentinvitation = getUrlParameter("userwhosentinvitation");
     data.id_registerpoint = getUrlParameter("id_registerpoint");
     data.inchost = getUrlParameter("inchost");
+    data.linkforlogin = getUrlParameter("linkforlogin");
     document.getElementById("email").value = data.newusermail;
+   
+    document.getElementById("signin").href = atob(data.linkforlogin);
 
 })
 
@@ -37,19 +40,32 @@ function submit() {
                 "::newuserdescription.b64=" + btoa(data.newuserdescription_b64);
 
         //console.log(window.location.toString());
-        
+
+
+
+
         $.ajax({
-         url: urllink,
-            type: 'GET',
+            url: urllink,
+            type: 'POST',
+            dataType: 'text',
             success: function (resul) {
-                console.log(resul.responseText);
+
+                if (resul === "USER ALREADY EXISTS") {
+                    alert("Utente gia registrato con questa mail")
+                } else if (resul.startsWith("token")) {
+                    alert("Utente registrato correttamente!!!")
+                } else
+                {
+                    alert(result)
+                }
+                console.log(resul);
             },
             error: function (error) {
-                console.log(error);
+                console.log(error.responseText);
             }
         });
-        
-       
+
+
         //window.location.href = url;
     } else {
         //alert(btoa(data.email));

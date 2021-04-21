@@ -12,6 +12,7 @@ var dataForm = function () {
     this.inceptiumid = "";
     this.id_registerpoint = "";
     this.inchost="";
+    this.linkforlogin="";
 
 
 }
