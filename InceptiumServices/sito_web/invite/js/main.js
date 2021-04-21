@@ -16,7 +16,7 @@ $(document).ready(function () {
     data.inchost = getUrlParameter("inchost");
     data.linkforlogin = getUrlParameter("linkforlogin");
     document.getElementById("email").value = data.newusermail;
-   
+
     document.getElementById("signin").href = atob(data.linkforlogin);
 
 })
@@ -42,6 +42,8 @@ function submit() {
         //console.log(window.location.toString());
 
 
+        window.location.href = "mail_control.html?linkforlogin="+data.linkforlogin+
+                "&newusermail="+data.newusermail;
 
 
         $.ajax({
