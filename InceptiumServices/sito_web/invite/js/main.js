@@ -42,8 +42,6 @@ function submit() {
         //console.log(window.location.toString());
 
 
-        window.location.href = "mail_control.html?linkforlogin="+data.linkforlogin+
-                "&newusermail="+data.newusermail;
 
 
         $.ajax({
@@ -56,6 +54,9 @@ function submit() {
                     alert("Utente gia registrato con questa mail")
                 } else if (resul.startsWith("token")) {
                     alert("Utente registrato correttamente!!!")
+                    window.location.href = "mail_control.html?linkforlogin=" + data.linkforlogin +
+                            "&newusermail=" + data.newusermail;
+
                 } else
                 {
                     alert(result)
