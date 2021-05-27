@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<!--
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+-->
+
+<html>
+    <head>
+        <link rel="stylesheet" href="acspect.css"/>
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+        <script src="js/main_userrequest.js"></script>
+        <script src="js/dataform.js"></script>
+
+    </head>
+    
+    <body>
+        <div class="container" >
+            <h1>Reset Password</h1>
+            <p>Compila i campi per resettare la password.</p>
+            <hr>
+            <label for="inceptium_id"><b>Inceptium_ID</b></label>
+            <input type="text" placeholder="inserire l'Inceptium ID" name="inceptium_id" id="inceptium_id" required ><!-- comment -->
+
+            <label for="email"><b>Email</b></label>
+            <input type="text" placeholder="Enter Email" name="email" id="email" required>
+
+           
+            <button type="submit" class="resetbtn" onclick="submit()" >Reset</button>
+        </div>
+        <div class="container signin" >
+            <p>Already have an account? <a id="signin" >Sign in</a>.</p>
+        </div>
+    </body>
+</html>

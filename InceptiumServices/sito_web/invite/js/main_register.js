@@ -11,13 +11,9 @@ $(document).ready(function () {
     data = new dataForm();
     data.newusermail = getUrlParameter("newusermail");
     data.linkforlogin = getUrlParameter("linkforlogin");
-
-
     var tit = document.getElementById("titolo_des").textContent + " ( " + data.newusermail + " )";
     document.getElementById("titolo_des").textContent = tit;
     document.getElementById("signin").href = atob(data.linkforlogin);
-
-
 })
 
 
