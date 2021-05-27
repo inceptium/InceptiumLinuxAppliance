@@ -13,6 +13,7 @@ var dataForm = function () {
     this.id_registerpoint = "";
     this.inchost="";
     this.linkforlogin="";
+    this.token="";
 
 
 }
