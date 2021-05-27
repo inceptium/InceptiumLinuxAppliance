@@ -18,8 +18,7 @@ $(document).ready(function () {
 
 
 function submit() {
-    data.newusermail = document.getElementById("email").value;
-    data.inceptiumid = document.getElementById("inceptium_id").value;
+   
     var password1 = document.getElementById("psw").value;
     var password2 = document.getElementById("psw-repeat").value;
     if (password1 === password2) {
