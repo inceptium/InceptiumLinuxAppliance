@@ -42,10 +42,9 @@ function submit() {
 
                 if (resul === "USER NOT EXISTS") {
                     alert("Utente non registrato")
-                } else if (resul.startsWith("token")) {
-                    alert("Utente registrato correttamente!!!")
-                    window.location.href = "mail_control.html?linkforlogin=" + data.linkforlogin +
-                            "&newusermail=" + data.newusermail;
+                } else if (resul.startsWith("MAIL_SENT")) {
+                   
+                    window.location.href = "/inapi/invite/mailresetpassword.html";
 
                 } else
                 {
