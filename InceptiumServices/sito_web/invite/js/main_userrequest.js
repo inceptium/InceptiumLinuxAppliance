@@ -25,7 +25,7 @@ function submit() {
         //data.password = document.getElementById("psw-repeat").value;
         //alert(btoa(data.email));
 
-        var urllink = "/resetuserpassword?inceptiumid=" +
+        var urllink = "/inapi/resetuserpassword?inceptiumid=" +
                 data.inceptiumid + "::newusermail=" +
                 data.newusermail
 
