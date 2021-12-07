@@ -1,27 +1,27 @@
 self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
-    "revision": "62f2a6332d81f94e3ddb971f54b5a2b0",
+    "revision": "288e9a224e981c09bee3f35de44af7da",
     "url": "/portaledef/index.html"
   },
   {
-    "revision": "c331f8ad8ee38f209049",
+    "revision": "657bf84ee51f196ff395",
     "url": "/portaledef/static/css/2.7c5c5277.chunk.css"
   },
   {
-    "revision": "f5cceb77aef647199ebd",
+    "revision": "b2f3c1318cad2e05ab92",
     "url": "/portaledef/static/css/main.b7c40936.chunk.css"
   },
   {
-    "revision": "c331f8ad8ee38f209049",
-    "url": "/portaledef/static/js/2.c27b52ae.chunk.js"
+    "revision": "657bf84ee51f196ff395",
+    "url": "/portaledef/static/js/2.5f0925b6.chunk.js"
   },
   {
     "revision": "44f9dd15b7c08b104b0b71db6192b31e",
-    "url": "/portaledef/static/js/2.c27b52ae.chunk.js.LICENSE.txt"
+    "url": "/portaledef/static/js/2.5f0925b6.chunk.js.LICENSE.txt"
   },
   {
-    "revision": "f5cceb77aef647199ebd",
-    "url": "/portaledef/static/js/main.7640e929.chunk.js"
+    "revision": "b2f3c1318cad2e05ab92",
+    "url": "/portaledef/static/js/main.efe8612d.chunk.js"
   },
   {
     "revision": "61ffe436f95d28546375",
