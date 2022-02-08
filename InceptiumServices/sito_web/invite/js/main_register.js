@@ -5,17 +5,20 @@
  */
 
 
+
 var data;
 
 $(document).ready(function () {
     data = new dataForm();
     data.newusermail = getUrlParameter("newusermail");
     data.linkforlogin = getUrlParameter("linkforlogin");
+    console.log(baseURL());
+    document.getElementById("signin").href = baseURL();
     var tit = document.getElementById("titolo_des").textContent + " ( " + data.newusermail + " )";
     document.getElementById("titolo_des").textContent = tit;
-    document.getElementById("signin").href = atob(data.linkforlogin);
-})
-
+    //document.getElementById("signin").href = atob(data.linkforlogin);
+	
+});
 
 
 
@@ -33,4 +36,9 @@ var getUrlParameter = function getUrlParameter(sParam) {
         }
     }
     return false;
+}
+
+function baseURL() {
+    const URL = window.location.origin + "/portaledef";
+    return URL;
 }

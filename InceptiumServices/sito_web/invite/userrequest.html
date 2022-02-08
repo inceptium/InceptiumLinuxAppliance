@@ -6,28 +6,41 @@ and open the template in the editor.
 -->
 
 <html>
-    <head>
-        <link rel="stylesheet" href="acspect.css"/>
-        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
-        <script src="js/main_userrequest.js"></script>
-        <script src="js/dataform.js"></script>
+  <head>
+    <link rel="stylesheet" href="mystyle.css" />
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="js/main_userrequest.js"></script>
+    <script src="js/dataform.js"></script>
+  </head>
 
-    </head>
-    
-    <body>
-        <div class="container" >
-            <h1>Reset Password</h1>
-            <p>Compila i campi per resettare la password.</p>
-            <hr>
-            <label for="inceptium_id"><b>Inceptium_ID</b></label>
-            <input type="text" placeholder="inserire l'Inceptium ID" name="inceptium_id" id="inceptium_id" required ><!-- comment -->
+  <body>
+    <div class="container">
+      <div class="form">
+        <h1>Reset Password</h1>
+        <p>Compila i campi per resettare la password.</p>
+        <hr />
+        <label for="inceptium_id"><b>Inceptium_ID</b></label>
+        <input
+          type="text"
+          placeholder="inserire l'Inceptium ID"
+          name="inceptium_id"
+          id="inceptium_id"
+          required
+        /><!-- comment -->
 
-            <label for="email"><b>Email</b></label>
-            <input type="text" placeholder="Enter Email" name="email" id="email" required>
+        <label for="email"><b>Email</b></label>
+        <input
+          type="text"
+          placeholder="Enter Email"
+          name="email"
+          id="email"
+          required
+        />
 
-           
-            <button type="submit" class="registerbtn" onclick="submit()" >Reset</button>
-        </div>
-       
-    </body>
+        <button type="submit" class="registerbtn" onclick="submit()">
+          Reset
+        </button>
+      </div>
+    </div>
+  </body>
 </html>

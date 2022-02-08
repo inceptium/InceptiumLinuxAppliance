@@ -5,14 +5,20 @@
  */
 
 
+
+
+
 var data;
 
 $(document).ready(function () {
     data = new dataForm();
-    
+    const returningLINK = baseURL();
+    console.log(baseURL());
     data.linkforlogin = getUrlParameter("linkforlogin");
-    document.getElementById("signin").href = atob(data.linkforlogin);
-})
+    // btn.href = atob(data.linkforlogin);
+    document.getElementById("signin").href = baseURL();
+});
+
 
 var getUrlParameter = function getUrlParameter(sParam) {
     var sPageURL = window.location.search.substring(1),
@@ -28,4 +34,11 @@ var getUrlParameter = function getUrlParameter(sParam) {
         }
     }
     return false;
+}
+
+
+
+function baseURL() {
+    const URL = window.location.origin + "/portaledef";
+    return URL;
 }

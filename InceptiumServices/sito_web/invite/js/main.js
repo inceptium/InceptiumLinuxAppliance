@@ -14,13 +14,16 @@ $(document).ready(function () {
     data.userwhosentinvitation = getUrlParameter("userwhosentinvitation");
     data.id_registerpoint = getUrlParameter("id_registerpoint");
     data.inchost = getUrlParameter("inchost");
+    
     data.linkforlogin = getUrlParameter("linkforlogin");
+    
+
+
     document.getElementById("email").value = data.newusermail;
 
-    document.getElementById("signin").href = atob(data.linkforlogin);
-
+    // document.getElementById("signin").href = atob(data.linkforlogin);
+    document.getElementById("signin").href = baseURL();
 })
-
 
 
 function submit() {
@@ -98,4 +101,10 @@ var getUrlParameter = function getUrlParameter(sParam) {
         }
     }
     return false;
+}
+
+
+function baseURL() {
+    const URL = window.location.origin + "/portaledef";
+    return URL;
 }
