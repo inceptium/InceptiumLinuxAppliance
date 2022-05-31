@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "/portaledef/static/css/main.b7c40936.chunk.css",
-    "main.js": "/portaledef/static/js/main.2c53245e.chunk.js",
+    "main.js": "/portaledef/static/js/main.2f99f631.chunk.js",
     "runtime-main.js": "/portaledef/static/js/runtime-main.905fdb32.js",
     "static/css/2.028485f4.chunk.css": "/portaledef/static/css/2.028485f4.chunk.css",
     "static/js/2.dad0290c.chunk.js": "/portaledef/static/js/2.dad0290c.chunk.js",
@@ -24,6 +24,6 @@
     "static/css/2.028485f4.chunk.css",
     "static/js/2.dad0290c.chunk.js",
     "static/css/main.b7c40936.chunk.css",
-    "static/js/main.2c53245e.chunk.js"
+    "static/js/main.2f99f631.chunk.js"
   ]
 }
