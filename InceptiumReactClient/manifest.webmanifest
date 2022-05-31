@@ -1,0 +1,14 @@
+{
+  "description": "Inceptium Web Client Gestionale",
+  "display": "fullscreen",
+  "icons": [
+    {
+      "src": "inceptium.jpg",
+      "sizes": "256x256",
+      "type": "image/png"
+    }
+  ],
+  "name": "Inceptium Web Client",
+  "short_name": "Inceptium",
+  "start_url": "./"
+}
