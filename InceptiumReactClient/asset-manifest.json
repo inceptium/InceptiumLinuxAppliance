@@ -1,29 +1,29 @@
 {
   "files": {
     "main.css": "/portaledef/static/css/main.b7c40936.chunk.css",
-    "main.js": "/portaledef/static/js/main.2f99f631.chunk.js",
-    "runtime-main.js": "/portaledef/static/js/runtime-main.905fdb32.js",
+    "main.js": "/portaledef/static/js/main.88701b6f.chunk.js",
+    "runtime-main.js": "/portaledef/static/js/runtime-main.27e39cfd.js",
     "static/css/2.028485f4.chunk.css": "/portaledef/static/css/2.028485f4.chunk.css",
-    "static/js/2.dad0290c.chunk.js": "/portaledef/static/js/2.dad0290c.chunk.js",
-    "static/js/3.6fd0f38e.chunk.js": "/portaledef/static/js/3.6fd0f38e.chunk.js",
-    "static/js/4.45b37da1.chunk.js": "/portaledef/static/js/4.45b37da1.chunk.js",
-    "static/js/5.dcfd978d.chunk.js": "/portaledef/static/js/5.dcfd978d.chunk.js",
+    "static/js/2.85a8dd5a.chunk.js": "/portaledef/static/js/2.85a8dd5a.chunk.js",
+    "static/js/3.ca742ff8.chunk.js": "/portaledef/static/js/3.ca742ff8.chunk.js",
+    "static/js/4.21cb1974.chunk.js": "/portaledef/static/js/4.21cb1974.chunk.js",
+    "static/js/5.9a40618c.chunk.js": "/portaledef/static/js/5.9a40618c.chunk.js",
     "index.html": "/portaledef/index.html",
     "service-worker.js": "/portaledef/service-worker.js",
     "service-worker.js.LICENSE.txt": "/portaledef/service-worker.js.LICENSE.txt",
-    "static/js/2.dad0290c.chunk.js.LICENSE.txt": "/portaledef/static/js/2.dad0290c.chunk.js.LICENSE.txt",
-    "static/js/3.6fd0f38e.chunk.js.LICENSE.txt": "/portaledef/static/js/3.6fd0f38e.chunk.js.LICENSE.txt",
-    "static/js/4.45b37da1.chunk.js.LICENSE.txt": "/portaledef/static/js/4.45b37da1.chunk.js.LICENSE.txt",
-    "static/js/5.dcfd978d.chunk.js.LICENSE.txt": "/portaledef/static/js/5.dcfd978d.chunk.js.LICENSE.txt",
+    "static/js/2.85a8dd5a.chunk.js.LICENSE.txt": "/portaledef/static/js/2.85a8dd5a.chunk.js.LICENSE.txt",
+    "static/js/3.ca742ff8.chunk.js.LICENSE.txt": "/portaledef/static/js/3.ca742ff8.chunk.js.LICENSE.txt",
+    "static/js/4.21cb1974.chunk.js.LICENSE.txt": "/portaledef/static/js/4.21cb1974.chunk.js.LICENSE.txt",
+    "static/js/5.9a40618c.chunk.js.LICENSE.txt": "/portaledef/static/js/5.9a40618c.chunk.js.LICENSE.txt",
     "static/media/app_icon.82a94199.png": "/portaledef/static/media/app_icon.82a94199.png",
     "static/media/logo.db0c59e0.png": "/portaledef/static/media/logo.db0c59e0.png",
     "static/media/slick-theme.css": "/portaledef/static/media/slick.c94f7671.ttf"
   },
   "entrypoints": [
-    "static/js/runtime-main.905fdb32.js",
+    "static/js/runtime-main.27e39cfd.js",
     "static/css/2.028485f4.chunk.css",
-    "static/js/2.dad0290c.chunk.js",
+    "static/js/2.85a8dd5a.chunk.js",
     "static/css/main.b7c40936.chunk.css",
-    "static/js/main.2f99f631.chunk.js"
+    "static/js/main.88701b6f.chunk.js"
   ]
 }
