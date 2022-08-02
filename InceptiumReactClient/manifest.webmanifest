@@ -1,6 +1,8 @@
 {
   "description": "Inceptium Web Client Gestionale",
-  "display": "fullscreen",
+  "theme_color": "#ADD8E6",
+  "background_color": "#ADD8E6",
+  "display": "standalone",
   "icons": [
     {
       "src": "inceptium.jpg",
