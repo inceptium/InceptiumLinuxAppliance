@@ -1,3 +1,4 @@
 *.log
 *.DS_Store
 /InceptiumReactClient/assets/
+/InceptiumBlazorClient/blazor_asset/
