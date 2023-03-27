@@ -2,3 +2,4 @@
 *.DS_Store
 /InceptiumReactClient/assets/
 /InceptiumBlazorClient/blazor_asset/
+/InceptiumReactClient/static/media/
