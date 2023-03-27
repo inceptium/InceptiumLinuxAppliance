@@ -7,7 +7,7 @@
   "linkerEnabled": true,
   "resources": {
     "assembly": {
-      "IncBlazorClient.dll": "sha256-v3DwS0TMAI6o5qb4V9Yo5S2D\/w5veBqPZo07akpMvJg=",
+      "IncBlazorClient.dll": "sha256-MvUSHRKp81JZNH2GOTrXBwnX7GrDsgF+xDGZdw5kZg4=",
       "InceptiumApiGuiLib.dll": "sha256-qU\/wNR+MKeYwPteb9oWjw6hG06sv+mEauubZuZMF3mI=",
       "Microsoft.AspNetCore.Components.dll": "sha256-ugffNXlqaRZMrbwaZkahPCtQ2nODjhFcZ+U1W9DQtGg=",
       "Microsoft.AspNetCore.Components.Forms.dll": "sha256-FjGG23mfNGraq06Jo40CKRVQ\/6x8yc+KG\/MvSsKUiWU=",
