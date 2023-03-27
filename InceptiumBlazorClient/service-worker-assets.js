@@ -65,7 +65,7 @@
       "url": "manifest.json"
     },
     {
-      "hash": "sha256-AH701l64a9z05neOuTBQ2Nr39nFLXkC01JPjVsqiIlk=",
+      "hash": "sha256-2P7LJwr9800x86VcjeIPS3CoK0WNinZGDlzHnfw13qs=",
       "url": "test\/Test.json"
     },
     {
@@ -101,11 +101,11 @@
       "url": "_framework\/icudt.dat"
     },
     {
-      "hash": "sha256-uBSdyEDr2\/I\/Wk3NkUiK0BZ8N4yE4TTBIdVUmgqEYYY=",
+      "hash": "sha256-vMaE0d1tsTIXgD5tFj1lVN7N72HrlR7u89YNc7WRGVg=",
       "url": "_framework\/blazor.boot.json"
     },
     {
-      "hash": "sha256-MvUSHRKp81JZNH2GOTrXBwnX7GrDsgF+xDGZdw5kZg4=",
+      "hash": "sha256-hdCN5qGEZj4P3rZ+biivRN6asNTnoxMc6sxn6v5oppw=",
       "url": "_framework\/IncBlazorClient.dll"
     },
     {
@@ -825,5 +825,5 @@
       "url": "_content\/Syncfusion.Blazor\/styles\/tailwind.css"
     }
   ],
-  "version": "VxiNm3gm"
+  "version": "Sfj\/lrqv"
 };
