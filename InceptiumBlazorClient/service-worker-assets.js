@@ -57,7 +57,7 @@
       "url": "icon-512.png"
     },
     {
-      "hash": "sha256-DRyLJueuT7XNUQBf22PFqsZzrjmhfhLH4folJxBBAgk=",
+      "hash": "sha256-oA5FI4lTkGdiPZFwIvUmhDP23vO+aP80BqSJyK70G+o=",
       "url": "index.html"
     },
     {
@@ -65,7 +65,7 @@
       "url": "manifest.json"
     },
     {
-      "hash": "sha256-4r9c1J2\/wmr36gxhNiJ6e2lPRVuxk2kCpozPKbfRAo0=",
+      "hash": "sha256-N5TRga+QV2Q+F0GtfS0U7AmR9SCffjrxidKmGmkF8qA=",
       "url": "test\/Test.json"
     },
     {
@@ -101,11 +101,11 @@
       "url": "_framework\/icudt.dat"
     },
     {
-      "hash": "sha256-3tqneTNStrWruOFMoNPm8+a4gVZQyYcXQS2Dze135lk=",
+      "hash": "sha256-ZtxTY53lc2Ot1V0Rvsj0Su3fbcINYswdZkn5BURd\/es=",
       "url": "_framework\/blazor.boot.json"
     },
     {
-      "hash": "sha256-bm3n70XbPPhj3xChSawAaa9ejqU6dW8erREuFc8vQRk=",
+      "hash": "sha256-v3DwS0TMAI6o5qb4V9Yo5S2D\/w5veBqPZo07akpMvJg=",
       "url": "_framework\/IncBlazorClient.dll"
     },
     {
@@ -825,5 +825,5 @@
       "url": "_content\/Syncfusion.Blazor\/styles\/tailwind.css"
     }
   ],
-  "version": "7pT3zROx"
+  "version": "tjIckSCD"
 };
